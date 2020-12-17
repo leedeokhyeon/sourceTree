@@ -1,0 +1,26 @@
+@import "../mixin/mixin.scss";
+.board{
+    & table{
+        & td{
+            &:nth-child(even){
+                padding:10px 20px;
+            }
+        }
+        & td{
+            &:nth-child(odd){
+                text-align:left;
+                vertical-align: middle;
+            }
+        }
+    }
+    & input{
+        width:400px;
+        height:30px;
+        border:1px solid #d4d5d9;
+        @include NotoSansKr(1.4,400,#000);
+        padding:0 15px;
+        &::placeholder{
+            @include NotoSansKr(1.4,400,#a3a3a3);
+        }
+    }
+}

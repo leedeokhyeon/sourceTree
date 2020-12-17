@@ -1,0 +1,48 @@
+@import "../mixin/mixin.scss";
+.login-wrap{
+    background: #2f92f0;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    & .login-container{
+        background: #fff;
+        padding:60px 43px 70px;
+        border-radius:10px;
+        @include boxshadow(0px,3px,6px,0px,rgba(0,0,0,0.2));
+        & .bi{
+            text-align:center;
+
+        }
+        & h1{
+            @include NotoSansKr(1.8,700,#383d4e);
+            text-align:center;
+            margin-top:20px;
+        }
+        & label{
+            display:block;
+            @include NotoSansKr(1.3,400,#999999);
+            margin-bottom:5px;
+        }
+        & input{
+            height:44px;
+            width:100%;
+            padding:0 10px;
+            border:2px solid #e9e9e9;
+            @include NotoSansKr(1.4,400,#000);
+        }
+        & button{
+            margin-top:30px;
+            background: #3695ff;
+            width:100%;
+            height:44px;
+            @include NotoSansKr(1.5,700,#fff);
+            border:0;
+        }
+        & .info{
+            margin-top:10px;
+            @include NotoSansKr(1.2,400,#858585);
+        }
+    }
+}

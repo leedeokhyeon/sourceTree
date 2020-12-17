@@ -1,0 +1,45 @@
+@import "../mixin/mixin.scss";
+.admin{
+    & table{
+        & td{
+            &:nth-child(even){
+                padding:10px 20px;
+            }
+        }
+        & td{
+            &:nth-child(odd){
+                vertical-align: middle;
+            }
+        }
+    }
+    & .admin-reg{
+        & input{
+            width:400px;
+            height:30px;
+            border:1px solid #d4d5d9;
+            @include NotoSansKr(1.4,400,#000);
+            padding:0 15px;
+            &::placeholder{
+                @include NotoSansKr(1.4,400,#a3a3a3);
+            }
+        }
+        & select{
+            width:400px;
+        }
+    }
+    & .admin-modify{
+        & input{
+            width:200px;
+            height:30px;
+            border:1px solid #d4d5d9;
+            @include NotoSansKr(1.4,400,#000);
+            padding:0 15px;
+            &::placeholder{
+                @include NotoSansKr(1.4,400,#a3a3a3);
+            }
+        }
+        & select{
+            width:200px;
+        }
+    }
+}
